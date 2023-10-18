@@ -38,16 +38,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmt->bind_param("sss", $name, $email, $message);
 
         if ($stmt->execute()) {
-            // Return a success message with a notification
-            echo "Thank you! Your message has been submitted.";
-        } else {
-            echo "Error: " . $stmt->error;
-        }
-        if ($stmt->execute()) {
             echo json_encode(["status" => "success", "message" => "Thank you! Your message has been submitted."]);
         } else {
             echo json_encode(["status" => "error", "message" => "Error: " . $stmt->error]);
         }
+        
         
 
         // Close the statement
