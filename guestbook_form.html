@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Guestbook Entry Form</title>
+    <style>
+        label {
+            margin-bottom: 10px; /* Adjust the value as needed for the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <h1>Guestbook Entry Form</h1>
+    <form action="process_guestbook.php" method="post" id="guestbookForm">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name "email" id="email" required><br>
+
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" required></textarea><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <div id="notification" style="display: none; background-color: #4CAF50; color: white; padding: 15px;">
+        Thank you! Your message has been submitted.
+    </div>
+
+    <script>
+        const form = document.getElementById('guestbookForm');
+        const notification = document.getElementById('notification');
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const formData = new FormData(form);
+
+            fetch("process_guestbook.php", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                notification.style.display = "block";
+                form.reset(); // Clear the form
+
+                // Hide the notification after a few seconds
+                setTimeout(() => {
+                    notification.style.display = "none";
+                }, 3000); // 3 seconds
+            })
+            .catch(error => {
+                notification.style.backgroundColor = "#FF5733";
+                notification.textContent = "An error occurred: " + error.message;
+                notification.style.display = "block";
+            });
+        });
+    </script>
+</body>
+</html>

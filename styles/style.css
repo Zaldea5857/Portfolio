@@ -1,0 +1,164 @@
+
+:root {
+  --primary-color: purple; 
+  --text-color: #ffffff; 
+  --link-color: #ffcc29; 
+  --background-color: #333333; 
+}
+.navbar{
+  background-color: violet;
+}
+
+
+
+.jumbotron{
+  background-color: transparent;
+  flex-grow: 1;
+}
+
+.jumbotron .display-4 {
+  color: var(--text-color) !important;}
+
+.jumbotron .lead {
+  color: var(--text-color) !important; 
+}
+
+.jumbotron a.btn.btn-primary.btn-lg {
+  background-color: transparent !important;
+  border-color: var(--text-color) !important;
+  color: var(--text-color) !important;
+}
+
+.jumbotron a.btn.btn-primary.btn-lg:hover {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  color: var(--link-hover-color) !important;
+}
+
+.hero-text h1 {
+  color: var(--text-color); 
+}
+
+.hero-text p {
+  color: var(--text-color); 
+}
+
+.hero-text a.btn-primary {
+  background-color: transparent;
+  border-color: var(--text-color); 
+  color: var(--text-color);
+}
+
+.hero-text a.btn-primary:hover {
+  background-color: var(--primary-color); 
+  border-color: var(--primary-color); 
+  color: var(--link-hover-color); 
+}
+body{
+  background-color: var(--primary-color);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+header{
+  background-color: #ff6b6b;
+}
+
+
+footer {
+  color: aqua;
+}
+.skills{
+  flex-grow: 0;
+}
+#resume{
+  flex-grow: 1;
+}
+.projects{
+  flex-grow: 1;
+}
+.contact{
+  flex-grow: 0;
+  color: white;
+}
+iframe {
+  width: 100%;
+  border: none;
+  overflow: hidden; /* Disable scrollbars */
+  height: auto; /* Allow the iframe to grow with its content */
+}
+
+#projectCarousel {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  background-color: transparent; 
+  border: none; 
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  font-size: 30px; 
+  color: transparent; 
+}
+
+.carousel-inner {
+  text-align: center;
+}
+
+.carousel-inner .carousel-item {
+  display: none;
+}
+
+.carousel-inner .carousel-item.active {
+  display: block;
+}
+
+.carousel-item .card {
+  display: inline-block;
+}
+
+.card-text.expandable {
+  display: none;
+}
+
+.expanded .image-card {
+  display: block;
+}
+
+.expanded .image-card .card {
+  display: block;
+}
+
+.expanded .image-card .card-body {
+  display: block;
+}
+
+.expanded .image-card .card-img-top {
+  display: block;
+}
+
+.expanded .image-card .card-title {
+  display: block;
+}
+
+.expanded .image-card .card-text {
+  display: block;
+}
+
+.expanded .image-card .btn {
+  display: block;
+}
+.icon-card {
+    transition: transform 0.3s, opacity 0.3s; 
+}
+
+.icon-card:hover {
+    transform: scale(1.2); 
+    opacity: 1; 
+    z-index: 1;
+}
+

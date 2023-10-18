@@ -1,0 +1,105 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Paul Zaldea</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div id="projectCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Project 1: Weather App --
+            <div class="carousel-item active">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title">Weather App</h3>
+                        <p class="card-text expandable">This program is a simple weather app that allows the user to get the weather, temperature, humidity, wind speed, pressure, and UV index of a certain city. <button class="btn btn-primary expand-button">Read More</button></p>
+                        <button class="btn btn-secondary expand-button">Read More</button>
+                        <div class="card expanded d-none">
+                            <img src="/images/weatherApp.png" alt="Weather App" class="card-img-top">
+                            <div class="card-body">
+                                <p class="card-text">This program is a simple weather app that allows the user to get the weather, temperature, humidity, wind speed, pressure, and UV index of a certain city.</p>
+                                <a href="https://github.com/zaldeap/WeatherApp" target="_blank" class="btn btn-primary">Check it Out</a>
+
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: Database Manager --
+            <div class="carousel-item">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title">Database Manager</h3>
+                        <p class="card-text expandable">A simple program that allows you to manage your database. You can get queries to filter and manipulate your data. All settings are saved in a JSON file. <strong>Fully compatible with any database.</strong> <button class="btn btn-primary expand-button">Read More</button></p>
+                        <button class="btn btn-secondary expand-button">Read More</button>
+
+                        <div class="card expanded d-none">
+                            <img src="/images/databaseApp.jpg" alt="Database App" class="card-img-top">
+                            <div class="card-body">
+                                <p class="card-text">A simple program that allows you to manage your database. You can get queries to filter and manipulate your data. All settings are saved in a JSON file. <strong>Fully compatible with any database.</strong></p>
+                                <a href="https://github.com/zaldeap/DatabaseApp_Paul-Zaldea" target="_blank" class="btn btn-primary">Check it Out</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: Bank App --
+            <div class="carousel-item">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title">Bank App</h3>
+                        <p class="card-text expandable">This program is a simple banking app that allows the user to get all information about a certain customer, filter, and save data about the customer. <button class="btn btn-primary expand-button">Read More</button></p>
+                        <button class="btn btn-secondary expand-button">Read More</button>
+
+                        <div class="card expanded d-none">
+                            <img src="/images/bankApp.png" alt="Bank App" class="card-img-top">
+                            <div class="card-body">
+                                <p class="card-text">This program is a simple banking app that allows the user to get all information about a certain customer, filter, and save data about the customer.</p>
+                                <a href="https://github.com/zaldeap/Bank-App" target="_blank" class="btn btn-primary">Check it Out</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <a class="carousel-control-prev" href="#projectCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#projectCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".expand-button").click(function() {
+                const card = $(this).closest(".card");
+                const expanded = card.find(".expanded");
+
+                if (expanded.hasClass("d-none")) {
+                    expanded.removeClass("d-none");
+                    $(this).text("Read Less"); 
+                } else {
+                    expanded.addClass("d-none");
+                    $(this).text("Read More"); 
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+--!>

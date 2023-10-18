@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paul Zaldea</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+    <script src="cardscript.js"></script>
+    
+
+    
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-nav navbar-light">
+            <a href="index.html" class="navbar-brand">
+                <img src="images/paul-zaldea-low-resolution-logo-color-on-transparent-background.png" alt="Logo" width="150px" height="85px">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="jumbotron text-center">
+        <h1 class="display-4" style="font-style: italic;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">I am Paul Zaldea</h1>
+        <p class="lead"><strong>Software and Web Developer</strong></p>
+        
+        <a class="btn btn-primary btn-lg" href="mailto:zaldeap@icloud.com">Hire Me</a>
+        <div id="about" class="fade-in slide-up">
+            <iframe src="about.html" frameborder="0" scrolling="no" data-src="about.html"></iframe>
+        </div>
+        <div id="skills" class="fade-in slide-up">
+            <iframe src="skills.html" frameborder="0" scrolling="no" data-src="skills.html"></iframe>
+        </div>
+        <div id="projects" class="fade-in slide-up">
+            <div id="projectCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#projectCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#projectCarousel" data-slide-to="1"></li>
+                    <li data-target="#projectCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <!-- Project 1: Weather App -->
+                    <div class="carousel-item active">
+                        <div class="card mb-4" style="background-color: transparent;border: #ff6b6b;">
+                            <div class="card-body">
+                                <h3 class="card-title" style="color: white;font-style: italic; ">Weather App</h3>
+                                <p class="card-text expandable">This program is a simple weather app that allows the user to get the weather, temperature, humidity, wind speed, pressure, and UV index of a certain city. <button class="btn btn-primary expand-button">Read More</button></p>
+                                <button class="btn btn-secondary expand-button">Read More</button>
+                                <div class="card expanded d-none">
+                                    <img src="/images/weatherApp.png" alt="Weather App" class="card-img-top">
+                                    <div class="card-body">
+                                        <p class="card-text">This program is a simple weather app that allows the user to get the weather, temperature, humidity, wind speed, pressure, and UV index of a certain city.</p>
+                                        <a href="https://github.com/zaldeap/WeatherApp" target="_blank" class="btn btn-primary">Check it Out</a>
+        
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Project 2: Database Manager -->
+                    <div class="carousel-item">
+                        <div class="card mb-4"style="background-color: transparent;border: #ff6b6b;">
+                            <div class="card-body">
+                                <h3 class="card-title" style="color: white; font-style: italic;" >Database Manager</h3>
+                                <p class="card-text expandable">A simple program that allows you to manage your database. You can get queries to filter and manipulate your data. All settings are saved in a JSON file. <strong>Fully compatible with any database.</strong> <button class="btn btn-primary expand-button">Read More</button></p>
+                                <button class="btn btn-secondary expand-button">Read More</button>
+        
+                                <div class="card expanded d-none">
+                                    <img src="/images/databaseApp.jpg" alt="Database App" class="card-img-top">
+                                    <div class="card-body">
+                                        <p class="card-text">A simple program that allows you to manage your database. You can get queries to filter and manipulate your data. All settings are saved in a JSON file. <strong>Fully compatible with any database.</strong></p>
+                                        <a href="https://github.com/zaldeap/DatabaseApp_Paul-Zaldea" target="_blank" class="btn btn-primary">Check it Out</a>
+        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Project 3: Bank App -->
+                    <div class="carousel-item">
+                        <div class="card mb-4"style="background-color: transparent;border: #ff6b6b;">
+                            <div class="card-body">
+                                <h3 class="card-title" style="color: white; font-style: italic;" >Bank App</h3>
+                                <p class="card-text expandable">This program is a simple banking app that allows the user to get all information about a certain customer, filter, and save data about the customer. <button class="btn btn-primary expand-button">Read More</button></p>
+                                <button class="btn btn-secondary expand-button">Read More</button>
+        
+                                <div class="card expanded d-none">
+                                    <img src="/images/bankApp.png" alt="Bank App" class="card-img-top">
+                                    <div class="card-body">
+                                        <p class="card-text">This program is a simple banking app that allows the user to get all information about a certain customer, filter, and save data about the customer.</p>
+                                        <a href="https://github.com/zaldeap/Bank-App" target="_blank" class="btn btn-primary">Check it Out</a>
+        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <a class="carousel-control-prev" href="#projectCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#projectCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" ariahidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            
+    
+        </div>
+        <div id="contact" class="fade-in slide-up">
+            <iframe src="guestbook_form.html" data-src="guestbook_form.html" style="height: 200px !important;"></iframe>
+        </div>
+        
+    </div>
+   
+
+    <footer class="text-center py-4">
+        <p>&copy; Paul Zaldea 2023</p>
+    </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+       
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
