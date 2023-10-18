@@ -44,6 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
         
         
+        
 
         // Close the statement
         $stmt->close();
